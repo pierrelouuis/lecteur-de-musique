@@ -60,7 +60,7 @@ Mafenetre.after(100,Vol) #Rafraichi valeur volume
 
 #definition de l'arriere plan
 
-photo = PhotoImage(file = IMG_DIR + "background.jpg")
+photo = PhotoImage(file = IMG_DIR + "/background.png")
 Largeur = 500
 Hauteur = 300
 
@@ -98,15 +98,15 @@ pygame.mixer.music.load(MP3_DIR + '/MIBD.mp3') #musique d'ouverture
 
 #reglage des differents boutons
 
-Play = PhotoImage(file = IMG_DIR + "play.png")
+Play = PhotoImage(file = IMG_DIR + "/play.png")
 BoutonLecture = Button(Mafenetre, text = 'Lecture', command = Lecture, fg='blue', bg='black', image=play)
 BoutonLecture.pack(side=LEFT, padx = 10, pady = 10)
 
-Pause = PhotoImage(file = IMG_DIR + "pause.png")
+Pause = PhotoImage(file = IMG_DIR + "/pause.png")
 BoutonPause = Button(Mafenetre, text = 'Pause', command = Pause, fg='blue', bg='black', image=pause)
 BoutonPause.pack(side = LEFT, padx = 10, pady = 10)
 
-Reprise = PhotoImage(file = IMG_DIR + "playpause.png")
+Reprise = PhotoImage(file = IMG_DIR + "/playpause.png")
 BoutonUnpause = Button(Mafenetre, text = 'Reprendre lecture', command = Reprise, fg='blue', bg='black', image=reprise) 
 BoutonUnpause.pack(side = LEFT, padx = 10, pady = 10)
 
